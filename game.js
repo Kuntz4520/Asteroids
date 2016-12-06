@@ -4,10 +4,17 @@
 //
 
 KEY_CODES = {
+<<<<<<< HEAD
   32: 'space',
   65: 'left',
   87: 'up',
   68: 'right',
+=======
+  16: 'space',
+  37: 'left',
+  38: 'up',
+  39: 'right',
+>>>>>>> 95203380b02f2089a6fdca58f82d0b28116754d8
   40: 'down',
   70: 'f',
   71: 'g',
@@ -917,7 +924,7 @@ Game = {
       this.state = 'waiting';
     },
     waiting: function () {
-      Text.renderText(window.ipad ? 'Touch Screen to Start' : 'Press Space to Start', 36, Game.canvasWidth/2 - 270, Game.canvasHeight/2);
+      Text.renderText(window.ipad ? 'Touch Screen to Start' : 'Press Shift to Start', 36, Game.canvasWidth/2 - 270, Game.canvasHeight/2);
       if (KEY_STATUS.space || window.gameStart) {
         KEY_STATUS.space = false; // hack so we don't shoot right away
         window.gameStart = false;
